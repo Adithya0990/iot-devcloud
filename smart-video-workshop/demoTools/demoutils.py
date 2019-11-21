@@ -72,7 +72,7 @@ def outputHTML(title, result_path, output_type, stats=None):
 
 
 
-def summaryPlot(results_list, x_axis, y_axis, title, plot):
+def summaryPlot(results_list, x_axis, y_axis, title, plot, width):
     ''' Bar plot input:
 	results_dict: dictionary of path to result file and label {path_to_result:label}
 	x_axis: label of the x axis
@@ -124,7 +124,7 @@ def summaryPlot(results_list, x_axis, y_axis, title, plot):
         plt.text(diff, y, data, fontsize=14, multialignment="center",horizontalalignment="center", verticalalignment="bottom",  color='black')
         diff += 1
     plt.ylim(top=(max(val)+10*offset))
-    plt.bar(arch, val, width=0.8, align='center', color=clr)
+    plt.bar(arch, val, width=width, align='center', color=clr)
 
 
 def liveQstat():
