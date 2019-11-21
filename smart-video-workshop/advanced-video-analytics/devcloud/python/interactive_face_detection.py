@@ -24,7 +24,6 @@ import time
 import numpy as np
 import math
 import logging as log
-from PIL import Image
 from openvino.inference_engine import IENetwork, IECore
 CV_PI=3.1415926535897932384626433832795
 from pathlib import Path
